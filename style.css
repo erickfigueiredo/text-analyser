@@ -1,0 +1,128 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;400;600&family=Lato:wght@100;200;400&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+textarea {
+  resize: none;
+}
+
+main {
+  margin: auto;
+  width: 100%;
+  height: 80%;
+  min-height:700px;
+}
+
+footer {
+  padding: 0 4rem;
+  text-align: center;
+}
+
+nav {
+  padding: 1rem 1.2rem;
+  border-bottom: 2px solid #eee;
+}
+
+nav > ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.brand {
+  font-family: "Montserrat", sans-serif;
+  background: -webkit-linear-gradient(to right, #28f19d, #02a1f9);
+  background: linear-gradient(to right, #28f19d, #02a1f9);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition-duration: 0.3s;
+}
+
+.stats {
+  border: 0.4px solid #eee;
+  border-radius: 5px;
+  margin: 1.2rem;
+  padding: 1rem;
+}
+
+p {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  color: rgb(153, 153, 153);
+  margin-bottom: 1.2rem;
+  font-family: sans-serif;
+}
+
+.content {
+  padding: 1.2rem;
+  height: 100%;
+}
+
+.form-field {
+  width: 100%;
+  border: 2px solid #ccc;
+  padding: 0.4rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  height: 100%;
+  transition-duration: 0.1s;
+}
+
+.form-field:focus {
+  border-color: #02a1f9;
+  outline: 4px solid rgba(33, 136, 233, 0.4);
+}
+
+.container {
+  padding: 0 1rem 0 1rem;
+  margin: 0 auto;
+}
+
+.grow:hover {
+  transform: scale(1.1);
+  transition-duration: 0.3s;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 576px;
+  }
+  main{
+    display: block;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+  main {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .content{
+    width: 70%;
+  }
+  .stats {
+    width: 30%;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}

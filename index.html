@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Texlitycs - Analisador textual simples" />
+    <meta name="theme-color" content="#25eba3">
+    <title>Texlytics</title>
+    
+    <link rel="icon" href="./texlytics.ico">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body class="container" style="height: 100vh">
+    <header>
+      <nav>
+        <ul>
+          <li><a href="https://github.com/erickfigueiredo/text-analysis" target="_blank"><h1 class="brand grow">Texlytics</h1></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main  id="app" >
+      <section class="content">
+        <textarea
+          name="user-text"
+          id="user-text"
+          v-model="userText"
+          class="form-field"
+          placeholder="Insira o texto aqui..."
+        ></textarea>
+      </section>
+      <aside class="stats">
+        <p>Número de Palavras: {{amountWords}}</p>
+        <p>Número de Linhas: {{amountLines}}</p>
+        <p>Número de Sentenças: {{amountSentences}}</p>
+        <p>Número de Paragrafos: {{amountParagraphs}}</p>
+        <p>Número de Caracteres: {{amountChar}}</p>
+        <p>Tempo estimado de leitura: {{readingTime}}</p>
+      </aside>
+    </main>
+    <script type="text/javascript" src="https://unpkg.com/vue@next"></script>
+    <script type="text/javascript" src="app.js"></script>
+  </body>
+</html>
